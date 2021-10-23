@@ -1,0 +1,2 @@
+# Welcome to my portfolio webpage!
+This repo is intended to house the code for my personal portfolio website, as well as document the process of me designing, coding, and hosting a web page for the first time.
