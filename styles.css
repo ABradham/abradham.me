@@ -25,7 +25,8 @@ li, a, p {
 
 /* Header Rules */
 header {
-  position: sticky;
+  width: 100%;
+  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -56,7 +57,7 @@ header {
 }
 /* Page Section Class definition */
 .page_section {
-  height: 70vh;
+  height: 100vh;
   display: flex;
 }
 /* About Section Styling */
