@@ -14,8 +14,8 @@
   background-color: #24252A;
 }
 
-/* General text rules */
-li, a, p {
+/* General header text rules */
+header li, a, p {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -60,6 +60,7 @@ header {
   height: 100vh;
   display: flex;
 }
+
 /* About Section Styling */
 #about_section {
   align-items: center;
@@ -77,6 +78,46 @@ header {
 #about_section p {
   font-size: 20px;
 }
+
 #about_section img {
   border-radius: 30px
+}
+
+/* Skills Section Styling */
+#skills_section {
+  align-items: space-between;
+  justify-content: center;
+  margin: auto;
+  display: flex;
+}
+
+#skills_content{
+  padding-top: 10%;
+}
+
+#skills_section h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 60px;
+  color: #edf0f1;
+}
+
+#skills_section li {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  color: #edf0f1;
+}
+
+.skill_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skill_item {
+  width: 10%;
+  height: 20%;
+  border: #51CB20;
+  border-radius: 35px;
+  padding: 10px;
 }
