@@ -25,6 +25,7 @@ li, a, p {
 
 /* Header Rules */
 header {
+  position: sticky;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -52,4 +53,29 @@ header {
 
 .nav_options li a:hover {
   color: #51CB20;
+}
+/* Page Section Class definition */
+.page_section {
+  height: 70vh;
+  display: flex;
+}
+/* About Section Styling */
+#about_section {
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  margin: auto;
+}
+#about_section h2 {
+  color: #edf0f1;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 80px;
+}
+
+#about_section p {
+  font-size: 20px;
+}
+#about_section img {
+  border-radius: 30px
 }
