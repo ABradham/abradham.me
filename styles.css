@@ -83,6 +83,7 @@ header {
   border-radius: 30px
 }
 
+
 /* Hand Waving Animation in pure CSS */
 @keyframes wave-animation {
   0% { transform: rotate( 0.0deg) }
@@ -102,7 +103,6 @@ header {
   transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
   display: inline-block;
 }
-
 
 /* Skills Section Styling */
 #skills_section {
