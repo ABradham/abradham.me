@@ -12,6 +12,8 @@
   margin: 0;
   padding: 0; 
   background-color: #24252A;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
 }
 
 /* General header text rules */
@@ -21,6 +23,20 @@ header li, a, p {
   font-size: 16px;
   color: #edf0f1;
   text-decoration: none;
+}
+
+/* Text Highlighting Rules */
+.highlighted_text {
+  color: #51CB20;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.small_highlighted_text {
+  color: aquamarine;
+  font-family: sans-serif;
+  font-weight: bold;
 }
 
 /* Header Rules */
@@ -58,8 +74,11 @@ header {
 }
 /* Page Section Class definition */
 .page_section {
+  width: 100%;
+  height: 100%;
   height: 100vh;
   display: flex;
+  scroll-snap-align: center;
 }
 
 /* About Section Styling */
@@ -168,26 +187,4 @@ header {
 
 #email_icon {
   font-size: 120px;
-}
-
-
-/* Phone Vibration Animation */
-.phone {
-  animation: vibrate 2s cubic-bezier(.36, .07, .19, .97) infinite;
-  transform: translate3d(0, 0, 0);
-  backface-visibility: hidden;
-  perspective: 300px;
-}
-
-
-@keyframes vibrate {
-  0%, 2%, 4%, 6%, 8%, 10%, 12%, 14%, 16%, 18% {
-            transform: translate3d(-1px, 0, 0);
-  }
-  1%, 3%, 5%, 7%, 9%, 11%, 13%, 15%, 17%, 19% {
-            transform: translate3d(1px, 0, 0);
-  }
-  20%, 100% {
-            transform: translate3d(0, 0, 0);
-  }
 }

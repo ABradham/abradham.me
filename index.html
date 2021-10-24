@@ -9,62 +9,68 @@
   </head>
 
   <body>
-    <header>
-      <p id="nav_title">Alphonso Bradham</p>
-      <nav>
-        <ul class="nav_options">
-          <li><a href="#about_section">About</a></li>
-          <li><a href="#skills_section">Skills</a></li>
-          <li><a href="#contact_section">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-     
-    <section class="page_section" id="about_section">
-        <div class="about_text">
-          <h2>What's Up <span class="wave">👋🏾</span></h2>
-          <p>I'm Alphonso, a student from Atlanta, Georgia</p>
-          <p>I study computer science at Dartmouth College</p>
+    <div class="container">
+        <header>
+          <p id="nav_title">Alphonso Bradham</p>
+          <nav>
+            <ul class="nav_options">
+              <li><a href="#about_section">About</a></li>
+              <li><a href="#skills_section">Skills</a></li>
+              <li><a href="#contact_section">Contact</a></li>
+            </ul>
+          </nav>
+        </header>
+          <section class="page_section" id="about_section">
+            <div class="about_text">
+              <h2>What's Up <span class="wave">👋🏾</span></h2>
+              <p>I'm <span class="highlighted_text">Alphonso</span>, a student from Atlanta, Georgia</p>
+              <p>I study computer science at Dartmouth College</p>
+            </div>
+              <img src="./assets/SelfPhoto.jpeg" alt="Photo of Alphonso">
+        </section>
+    
+      <section class="page_section" id="skills_section">
+        <div id="skills_content">
+          <h2>My Skills</h2>
+          <p>In my free time, I like to <span class="highlighted_text">tinker with code</span> and make cool, useful things.</p>
+          <p>In the past I've made a <span class="small_highlighted_text">Tiny Search Engine</span> in C, and a <span class="small_highlighted_text">ToDo App</span> using the MERN stack</p>
+          <br>
+          <p>In the future, I plan to make <span class="highlighted_text">much more</span>!</p>
+          <br/>
+          <p>I feel comfortable working with the following tools and technologies: </p>
+          <div class="skill_container">
+            <div class="skill_item" id="skill_1">
+              <img src="https://img.icons8.com/color/96/000000/python--v1.png"/>
+              <p>Python</p>
+            </div>
+            <div class="skill_item" id="skill_2">
+              <img src="https://img.icons8.com/color/96/000000/java-coffee-cup-logo--v1.png"/>
+              <p>Java</p>
+            </div>
+          </div>
+          <div class="skill_container">
+            <div class="skill_item" id="skill_3">
+              <img src="https://img.icons8.com/color/96/000000/git.png"/>
+              <p>Git</p>
+            </div>
+            <div class="skill_item" id="skill_4">
+              <img src="https://img.icons8.com/color/96/000000/javascript--v1.png"/>
+              <p>Javascript</p>
+            </div>
+          </div>
         </div>
-          <img src="./assets/SelfPhoto.jpeg" alt="Photo of Alphonso">
-    </section>
-
-  <section class="page_section" id="skills_section">
-    <div id="skills_content">
-      <h2>My Skills</h2>
-      <p>I feel comfortable working with the following tools and technologies: </p>
-      <div class="skill_container">
-        <div class="skill_item" id="skill_1">
-          <img src="https://img.icons8.com/color/96/000000/python--v1.png"/>
-          <p>Python</p>
+      </section>
+    
+      <section class="page_section" id="contact_section">
+        <h2>Get In Touch <span class="phone">📱</span></h2>
+        <p>Feel free to reach out via any of the following platforms!</p>
+        <div class="icon_container">
+          <div><a href="https://github.com/ABradham"><img src="/assets/gith_logo.png" alt=""></a></div>
+          <div><a href="https://www.linkedin.com/in/alphonso-bradham/"><img src="/assets/link_logo.png" alt=""></a></div>
+          <div><a href="https://www.instagram.com/al.bradh12/"><img src="/assets/insta_logo.png" alt=""></a></div>
+          <div><a href="mailto:alphonso.p.bradham.24@dartmouth.edu" id="email_icon">📧</a></div>
         </div>
-        <div class="skill_item" id="skill_2">
-          <img src="https://img.icons8.com/color/96/000000/java-coffee-cup-logo--v1.png"/>
-          <p>Java</p>
-        </div>
-      </div>
-      <div class="skill_container">
-        <div class="skill_item" id="skill_3">
-          <img src="https://img.icons8.com/color/96/000000/git.png"/>
-          <p>Git</p>
-        </div>
-        <div class="skill_item" id="skill_4">
-          <img src="https://img.icons8.com/color/96/000000/javascript--v1.png"/>
-          <p>Javascript</p>
-        </div>
-      </div>
+      </section>  
     </div>
-  </section>
-
-  <section class="page_section" id="contact_section">
-    <h2>Get In Touch <span class="phone">📱</span></h2>
-    <p>Feel free to reach out via any of the following platforms!</p>
-    <div class="icon_container">
-      <div><a href="https://github.com/ABradham"><img src="/assets/gith_logo.png" alt=""></a></div>
-      <div><a href="https://www.linkedin.com/in/alphonso-bradham/"><img src="/assets/link_logo.png" alt=""></a></div>
-      <div><a href="https://www.instagram.com/al.bradh12/"><img src="/assets/insta_logo.png" alt=""></a></div>
-      <div><a href="mailto:alphonso.p.bradham.24@dartmouth.edu" id="email_icon">📧</a></div>
-    </div>
-  </section>
   </body>
 </html>
