@@ -31,6 +31,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 30px 10px;
+  z-index: 1;
 }
 
 /* Nav Logo Styling */
@@ -87,20 +88,20 @@ header {
 /* Hand Waving Animation in pure CSS */
 @keyframes wave-animation {
   0% { transform: rotate( 0.0deg) }
- 10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+ 10% { transform: rotate(14.0deg) }
  20% { transform: rotate(-8.0deg) }
  30% { transform: rotate(14.0deg) }
  40% { transform: rotate(-4.0deg) }
  50% { transform: rotate(10.0deg) }
- 60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+ 60% { transform: rotate( 0.0deg) }
 100% { transform: rotate( 0.0deg) }
 }
 
 .wave {
-  animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
-  animation-duration: 2.5s;        /* Change to speed up or slow down */
-  animation-iteration-count: infinite;  /* Never stop waving :) */
-  transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
   display: inline-block;
 }
 
@@ -141,4 +142,52 @@ header {
   border: #51CB20;
   border-radius: 35px;
   padding: 10px;
+}
+
+/* Contacty Section */
+#contact_section {
+  padding-top: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contact_section h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 60px;
+  color: #edf0f1;
+}
+
+.icon_container {
+  width: 80%;
+  padding: 5%;
+  display: flex;
+  justify-content: space-around;
+}
+
+#email_icon {
+  font-size: 120px;
+}
+
+
+/* Phone Vibration Animation */
+.phone {
+  animation: vibrate 2s cubic-bezier(.36, .07, .19, .97) infinite;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 300px;
+}
+
+
+@keyframes vibrate {
+  0%, 2%, 4%, 6%, 8%, 10%, 12%, 14%, 16%, 18% {
+            transform: translate3d(-1px, 0, 0);
+  }
+  1%, 3%, 5%, 7%, 9%, 11%, 13%, 15%, 17%, 19% {
+            transform: translate3d(1px, 0, 0);
+  }
+  20%, 100% {
+            transform: translate3d(0, 0, 0);
+  }
 }
